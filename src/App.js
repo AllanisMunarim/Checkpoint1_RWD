@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import './App.css'
+import Lampada from "./components/Lampada"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+   
+    const aluna = ['Allanis Silva Munarim']
+    const Rm = ['94632']
+    return(
+        <>
+        <h1 id="titulo">Checkpoint_01 
+            <p>Aluna:{aluna}/ Rm{Rm}</p>
+        </h1>
+
+        <Lampada/>
+
+
+        </>
+          
+    )
+   
 }
-
-export default App;
